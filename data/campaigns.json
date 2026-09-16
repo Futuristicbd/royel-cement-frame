@@ -1,0 +1,16 @@
+{
+  "campaigns": [
+    {
+      "id": "demo",
+      "title": "Together, we build.",
+      "slug": "royal-cement",
+      "description": "আপনার ছবিতে যোগ হোক রয়েল সিমেন্টের ফ্রেম।",
+      "caption": "একসাথে গড়ি আগামীর বাংলাদেশ।\nরয়েল সিমেন্ট — গুণে মানে সেরা।\n\n#RoyalCement #BuildingTogether",
+      "published": true,
+      "frames": [
+        {"id": "sample-green", "demo": true, "color": "#07583f"},
+        {"id": "sample-blue", "demo": true, "color": "#163e62"}
+      ]
+    }
+  ]
+}
