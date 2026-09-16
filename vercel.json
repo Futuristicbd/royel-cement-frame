@@ -3,15 +3,39 @@
   "version": 2,
   "cleanUrls": true,
   "rewrites": [
-    {"source": "/admin", "destination": "/index.html"},
-    {"source": "/c/:slug", "destination": "/index.html"}
+    {
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/c/:slug",
+      "destination": "/index.html"
+    }
   ],
   "headers": [
-    {"source": "/(.*)", "headers": [
-      {"key": "X-Content-Type-Options", "value": "nosniff"},
-      {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"},
-      {"key": "X-Frame-Options", "value": "DENY"},
-      {"key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://raw.githubusercontent.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"}
-    ]}
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://raw.githubusercontent.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
+        }
+      ]
+    }
+  ],
+  "alias": [
+    "royel-cement-frame.vercel.app"
   ]
 }
